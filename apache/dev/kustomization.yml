@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+metadata:
+  name: apache-dev
+
+commonLabels:
+  app: httpd
+
+resources:
+- deployment-apache-dev.yml
+- cm-apache-dev.yml
+- cm-index-dev.yml
