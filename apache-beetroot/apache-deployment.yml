@@ -9,7 +9,7 @@ spec:
   ports:
     - port: 8082
       targetPort: 80
-      nodePort: 30088
+      nodePort: 30099
 ---
 apiVersion: apps/v1
 kind: Deployment
